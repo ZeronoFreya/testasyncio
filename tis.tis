@@ -1,0 +1,11 @@
+include "common.tis";
+function self.ready() {
+    Sciter.launch( "inspector.exe" );
+    view.connectToInspector($(body));
+    //设置窗口居中
+    setWinToCenter();
+    //刷新deBug
+    $(button[role="window-refresh"]).on("click",function(){
+        view.connectToInspector($(body));
+    })
+}

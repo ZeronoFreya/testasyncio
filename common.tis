@@ -1,0 +1,10 @@
+function alert(p){
+    view.msgbox( #information, p);
+}
+function setWinToCenter(){
+    var (xs,ys,ws,hs) = view.screenBox(#workarea,#rectw);
+    var (ww, hw) = view.box(#dimension, #border, #screen);
+    var cx = ( ws - ww ) / 2;
+    var cy = ( hs - hw ) / 2;
+    view.move(cx,cy,ww,hw);
+}
