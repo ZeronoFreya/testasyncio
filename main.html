@@ -1,4 +1,4 @@
-<html window-frame="solid" window-resizable >
+﻿<html window-frame="solid-with-shadow" window-resizable >
   <head>
     <title>这是个模板</title>
     <style type="text/css" src="css.scs"></style>
@@ -6,10 +6,13 @@
   </head>
 <header>
   <caption role="window-caption">Caption</caption>
-  <button role="window-refresh">Refresh Debug</button>
-  <button role="window-close">X</button>
+  <window-button #window-debug>s</window-button>
+  <window-button #window-menu>6</window-button>
+  <window-button #window-min role="window-minimize">0</window-button>
+  <window-button #window-max role="window-maximize">2</window-button>
+  <window-button #window-close role="window-close">r</window-button>
 </header>
 <body>
-    <ul #ul></ul>
+  <button#btn>click!</button>
 </body>
 </html>

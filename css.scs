@@ -1,27 +1,53 @@
 html {
-    background: orange;
-    overflow: none;
+    /*background: gold;*/
+    overflow: hidden;
 }
-
+html,body,header,caption{
+    margin: 0;
+    padding: 0;
+}
 html>header {
     width: *;
     line-height: 1.6em;
     flow: horizontal;
-    margin: 3dip 3dip 0 3dip;
 }
 
 html>header>caption {
     width: *;
     height: *;
+    /*padding: 3dip 3dip 0 3dip;*/
+    text-indent: 3dip;
 }
 
-html>header>button {
+
+/*html>header>button {
     behavior: clickable;
-    /*non-focusable button*/
+}*/
+
+window-button {
+    display: inline-block;
+    width: max-content;
+    font-family: Marlett;
+    font-size: 14px;
+    outline-color: red;
+    behavior: clickable;
+    padding: 0 10dip;
+    border-bottom: 1px #cccccc solid;
 }
+
+/* window-button#window-close {
+    background-color: #dbb7ab;
+    color: white;
+
+} */
+
+/* window-button#window-close:hover {
+    background-color: red;
+    outline: 5px glow red -1px;
+    transition: outline(linear, 200ms) background-color(linear, 200ms);
+} */
 
 body {
-    margin: 0 3dip 3dip 3dip;
-    background: gold;
-    overflow: none;
+    padding: 0 3dip 3dip 3dip;
+    background: #ffffff;
 }

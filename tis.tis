@@ -1,11 +1,16 @@
-include "common.tis";
+﻿include "common.tis";
 function self.ready() {
-    Sciter.launch( "inspector.exe" );
-    view.connectToInspector($(body));
     //设置窗口居中
     setWinToCenter();
-    //刷新deBug
-    $(button[role="window-refresh"]).on("click",function(){
+    var h = $(header).box(#height, #border, #view);
+    setMinSize( 320,197.76 );
+    //加载或刷新deBug？
+    $(#window-debug).on("click",function(){
+        Sciter.launch( "inspector.exe" );
         view.connectToInspector($(body));
+    })
+
+    $(#btn).on("click",function(){
+        view.test();
     })
 }
