@@ -13,4 +13,11 @@ function self.ready() {
     $(#btn).on("click",function(){
         view.test();
     })
+
+    // view.root.on("closerequest",function(evt) {
+    //     return false;
+    // });
+}
+function appendImgList( html ){
+    self.$(#ul).$append( <img src="{html}"/> );
 }
