@@ -15,15 +15,15 @@ postMessage = ctypes.windll.user32.PostMessageW
 
 myWM_USER = win32con.WM_USER+10
 path = 'https://68.media.tumblr.com/c0c18a1f04a764b80d9c005b7cbe95f5/tumblr_oteae2YKrt1rzvykfo1_250.jpg'
-# proxies = {
-#     "http": "127.0.0.1:50175",
-#     "https": "127.0.0.1:50175"
-# }
 proxies = {
-    "http": "127.0.0.1:61274",
-    "https": "127.0.0.1:61274"
+    "http": "127.0.0.1:50175",
+    "https": "127.0.0.1:50175"
 }
-file_path = 'd:/a.jpg'
+# proxies = {
+#     "http": "127.0.0.1:61274",
+#     "https": "127.0.0.1:61274"
+# }
+file_path = 'r:/a.jpg'
 def run(qq, hwnd):
     req = requests.get( path, proxies=proxies )
     with open(file_path, 'wb') as fh:
